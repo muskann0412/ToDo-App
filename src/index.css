@@ -1,3 +1,80 @@
 input {
   width: 30%;
 }
+/* index.css */
+
+body {
+  /* a moody, deep-blue → teal gradient */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #f1f1f1;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* wrap your .container in a semi‑transparent panel */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+/* style your table to “float” on that panel */
+table {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+}
+
+/* jazz up the inputs/buttons */
+input[type="text"] {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-right: 0.5rem;
+  width: 200px;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+button.btn-warning {
+  background: linear-gradient(45deg, #f6d365, #fda085);
+  color: #333;
+}
+
+button.btn-danger {
+  background: linear-gradient(45deg, #e53935, #ff7043);
+  color: #fff;
+}
+
+button#add {
+  background: linear-gradient(45deg, #84fab0, #8fd3f4);
+  color: #333;
+}
+
+/* optional “no items” state */
+.empty-message {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}

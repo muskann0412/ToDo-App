@@ -3,23 +3,7 @@ import Form from './Form'
 import Todos from './Todos'
 
 const App = () => {
-  const [todos, setTodos] = useState([
-    {
-      id:1,
-      title:"This is brand new Title",
-      description:"This is brand new Description"
-    },
-    {
-      id:2,
-      title:"This is brand new Title 2",
-      description:"This is brand new Description 2"
-    },
-    {
-      id:3,
-      title:"This is brand new Title 3",
-      description:"This is brand new Description 3"
-    },
-  ])
+  const [todos, setTodos] = useState([])
 
   const [id, setId] = useState("")
 
